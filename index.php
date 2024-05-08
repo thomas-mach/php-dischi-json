@@ -13,9 +13,32 @@
 
 
     <div id="app">
-        <button @click="count++">
-            Count is: {{ count }}
-        </button>
+
+        <header>
+            <footer>
+
+            </footer>
+            <main>
+                <div class="container">
+                    <div class="row">
+                        <div class="card" v-for="(disc, i) in discs" :key="i">
+                            <ul>
+                                <li><img :src="disc.poster" alt=""></li>
+                                <li>{{disc.title}}</li>
+                                <li>{{disc.author}}</li>
+                                <li>{{disc.year}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </header>
+
+        <!-- <div v-for="(disc, i) in discs" :key="i">
+            {{ disc.title }}
+        </div> -->
+
+
     </div>
 
 
