@@ -3,7 +3,8 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            discs: []
+            discs: [],
+            isOpen: null,
         }
     },
     methods: {
@@ -13,10 +14,12 @@ createApp({
                 this.discs = res.data
                 console.log(this.discs)
             })
-
-        }
+        },
+        toggleOpen(i) {
+            this.isOpen = this.isOpen === i ? null : i;
+        },
     },
     created() {
         this.fetch()
     }
- }).mount('#app')
+}).mount('#app')
