@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.container {
+    background-color: rgb(91, 91, 91);
+    padding-top: 50px;
+    height: 100%;
+
+
+}
+
+.row {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+}
+
+img {
+    width: 180px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    padding: 20px;
+    background-color: rgb(58, 57, 57);
+    color: white;
+    gap: 15px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+header {
+    background-color: rgb(58, 57, 57);
+    padding: 25px;
+}

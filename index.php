@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>php-dischi-json</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -15,36 +16,25 @@
     <div id="app">
 
         <header>
-            <footer>
-
-            </footer>
-            <main>
-                <div class="container">
-                    <div class="row">
-                        <div class="card" v-for="(disc, i) in discs" :key="i">
-                            <ul>
-                                <li><img :src="disc.poster" alt=""></li>
-                                <li>{{disc.title}}</li>
-                                <li>{{disc.author}}</li>
-                                <li>{{disc.year}}</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </main>
+            <img src="apple.png" alt="">
         </header>
 
-        <!-- <div v-for="(disc, i) in discs" :key="i">
-            {{ disc.title }}
-        </div> -->
+        <main>
+            <div class="container">
+                <div class="row">
 
+                    <ul class="card col-4" v-for="(disc, i) in discs" :key="i">
+                        <li><img :src="disc.poster" alt=""></li>
+                        <li>{{disc.title}}</li>
+                        <li>{{disc.author}}</li>
+                        <li>{{disc.year}}</li>
+                    </ul>
+
+                </div>
+            </div>
+        </main>
 
     </div>
-
-
-
-
-
     <script src="./js/app.js"></script>
 </body>
 
